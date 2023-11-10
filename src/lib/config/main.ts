@@ -1,12 +1,11 @@
-import { SiteConfig } from "@lib/types";
+import { MainConfig } from "@lib/types";
 
-export const siteConfig: SiteConfig = {
-  name: "Sourcing Platform Advisory",
-  description: "An open source application built using the new router, server components and everything new in Next.js 13.",
-  url: "https://tx.shadcn.com",
-  ogImage: "https://tx.shadcn.com/og.jpg",
-  links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/taxonomy",
-  },
+export const mainConfig: MainConfig = {
+  mainNav: [
+    { title: "Home", href: "/" },
+    { title: "Kieferorthopädie", href: "/kieferorthopädie" },
+    { title: "Behandlungsteam", href: "/behandlungsteam" },
+    { title: "Praxis", href: "/praxis" },
+    { title: "Kontakt", href: "/kontakt" },
+  ],
 };

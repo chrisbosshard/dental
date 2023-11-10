@@ -3,6 +3,8 @@ import Image from "next/image";
 // Packages
 import { Blob } from "@graphics/blob";
 import { Navigation } from "@/components/sections/navigation";
+import { MainNav } from "@sections/main-nav";
+import { mainConfig } from "@lib/config/main";
 
 // Data
 const links = [
@@ -19,7 +21,7 @@ export default function Home() {
       <div className="w-full bg-gradient-to-tr from-slate-100 to-sky-300 flex justify-center overflow-hidden relative">
         <Blob className="absolute opacity-40" colorStart="#ffffff" colorEnd="#bae6fd" />
         <div className="container z-10 p-6">
-          <Navigation links={links} />
+          <MainNav items={mainConfig.mainNav} />
           <div className="mt-32 mb-72 flex items-center">
             <div className="w-2/5">
               <h1 className="text-5xl font-bold text-slate-800 leading-tight">Das Kompetenzzentrum für Kieferorthopädie in der Region</h1>

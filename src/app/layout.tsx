@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
-import { siteConfig } from "@lib/config/main";
+import { siteConfig } from "@lib/config/site";
 import { cn } from "@lib/utils/utils";
 import { ThemeProvider } from "@layouts/theme-provider";
 
