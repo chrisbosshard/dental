@@ -17,18 +17,8 @@ export function MobileNav({ items, children }: MobileNavProps) {
   useLockBody();
 
   return (
-    <div
-      className={cn(
-        "fixed inset-0 top-16 z-50 grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden"
-      )}
-    >
-      <div className="relative z-20 grid gap-6 bg-white rounded-md bg-popover p-4 text-popover-foreground shadow-md">
-        <Link href="/" className="hidden items-center space-x-2 md:flex">
-          <div className="relative w-8 h-8 opacity-40">
-            <Image src="/dental-braces.svg" alt="Logo" fill />
-          </div>
-          <span className="font-bold inline-block">Dr. Damur</span>
-        </Link>
+    <div className="fixed inset-0 top-16 z-50 grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden">
+      <div className="relative w-full z-20 grid gap-6 bg-white rounded-md bg-popover p-4 text-popover-foreground shadow-md">
         <nav className="grid grid-flow-row auto-rows-max text-sm">
           {items.map((item, index) => (
             <Link

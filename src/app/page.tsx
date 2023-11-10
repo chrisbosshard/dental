@@ -20,7 +20,7 @@ export default function Home() {
     <div className="w-full">
       <div className="w-full bg-gradient-to-tr from-slate-100 to-sky-300 flex justify-center overflow-hidden relative">
         <Blob className="absolute opacity-40" colorStart="#ffffff" colorEnd="#bae6fd" />
-        <div className="container z-10 p-6">
+        <div className="max-w-screen-xl z-10 p-6">
           <MainNav items={mainConfig.mainNav} />
           <div className="mt-32 mb-72 flex items-center">
             <div className="w-2/5">
