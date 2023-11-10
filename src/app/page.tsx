@@ -2,6 +2,16 @@ import Image from "next/image";
 
 // Packages
 import { Blob } from "@graphics/blob";
+import { Navigation } from "@/components/sections/navigation";
+
+// Data
+const links = [
+  { link: "Home", href: "/" },
+  { link: "Kieferorthopädie", href: "/kieferorthopädie" },
+  { link: "Behandlungsteam", href: "/behandlungsteam" },
+  { link: "Praxis", href: "/praxis" },
+  { link: "Kontakt", href: "/kontakt" },
+];
 
 export default function Home() {
   return (
@@ -9,21 +19,7 @@ export default function Home() {
       <div className="w-full bg-gradient-to-tr from-slate-100 to-sky-300 flex justify-center overflow-hidden relative">
         <Blob className="absolute opacity-40" colorStart="#ffffff" colorEnd="#bae6fd" />
         <div className="container z-10 p-6">
-          <div className="w-full h-10 flex items-center justify-between">
-            <div className="flex gap-4 items-center">
-              <div className="relative w-8 h-8 opacity-40">
-                <Image src="/dental-braces.svg" alt="Logo" fill />
-              </div>
-              <p className="text-lg font-bold">Dr. Damur</p>
-            </div>
-            <div className="flex gap-8 text-sm font-semibold">
-              <p>Home</p>
-              <p>Kieferorthopädie</p>
-              <p>Behandlungsteam</p>
-              <p>Praxis</p>
-              <p>Kontakt</p>
-            </div>
-          </div>
+          <Navigation links={links} />
           <div className="mt-32 mb-72 flex items-center">
             <div className="w-2/5">
               <h1 className="text-5xl font-bold text-slate-800 leading-tight">Das Kompetenzzentrum für Kieferorthopädie in der Region</h1>
