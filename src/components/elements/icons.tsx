@@ -29,10 +29,10 @@ import {
   Globe2,
   CalendarDays,
   Hammer,
-  type Icon as LucideIcon,
+  type XIcon as LucideIcon,
 } from "lucide-react";
 
-export type Icon = LucideIcon;
+export type Icon = typeof LucideIcon;
 
 export const Icons = {
   logo: Command,
