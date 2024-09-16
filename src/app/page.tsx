@@ -6,6 +6,7 @@ import { MainNav } from "@sections/main-nav";
 import { Hero } from "@sections/hero";
 import { Info } from "@sections/info";
 import { mainConfig } from "@lib/config/main";
+import { Contact } from "@sections/contact";
 
 // Data
 const links = [
@@ -43,11 +44,11 @@ export default function Home() {
             zu einem ästhetisch wie auch funktionell optimalen Resultat zu gelangen.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mt-12">
-            <SectionButton image="/dentist-time.svg" title="Die erste Sitzung" />
-            <SectionButton image="/dental-braces.svg" title="Behandlungsspektrum" />
-            <SectionButton image="/dental-invisible.svg" title="Unsichtbare Zahnspangen" />
-            <SectionButton image="/cost.svg" title="Kosten" />
-            <SectionButton image="/dental-mirror.svg" title="Links" />
+            <SectionButton image="/dentist-time.svg" title="Die erste Sitzung" link="/erste-sitzung" />
+            <SectionButton image="/dental-braces.svg" title="Behandlungsspektrum" link="/behandlungsspektrum" />
+            <SectionButton image="/dental-invisible.svg" title="Unsichtbare Zahnspangen" link="/unsichtbare-zahnspange" />
+            <SectionButton image="/cost.svg" title="Kosten" link="kosten" />
+            <SectionButton image="/dental-mirror.svg" title="Links" link="/links" />
           </div>
         </div>
       </div>
@@ -55,12 +56,13 @@ export default function Home() {
         <div className="container max-w-screen-xl p-4">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4">Behandlungsteam</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12">
-            <StaffImage image="/ch-damur.png" name="Dr. Christoph Damur" />
-            <StaffImage image="/c-ruopp.png" name="Dr. Claudia Ruopp" />
-            <StaffImage image="/s-tektas.png" name="Dr. Sibel Tektas" />
+            <StaffImage image="/ch-damur.png" name="Dr. Christoph Damur" link="/ch-damur" />
+            <StaffImage image="/c-ruopp.png" name="Dr. Claudia Ruopp" link="/c-ruopp" />
+            <StaffImage image="/s-tektas.png" name="Dr. Sibel Tektas" link="/s-tektas" />
           </div>
         </div>
       </div>
+      <Contact />
     </div>
   );
 }
